@@ -23,6 +23,7 @@ summary(factor(c("a", "a", "b", "c", "d", "b", "d"))) #factor=list count of each
 length(c("a", "a", "b", "c", "d", "b", "d"))
 sort(c("a", "a", "b", "c", "d", "b", "d"))
 sort(ratings)
+sort(ratings, decreasing = TRUE)
 min(ratings)
 max(ratings)
 sum(ratings)
