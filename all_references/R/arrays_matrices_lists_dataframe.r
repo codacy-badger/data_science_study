@@ -38,6 +38,16 @@ movie_matrix <- matrix(movie_vector, nrow = 3, ncol = 3, byrow = TRUE)
 movie_matrix[1, 2] #row 1 column 2
 movie_matrix[2:3, 1:2] #row 2 thru 3 column 1 through 2
 
+#statistics
+class(movie_matrix) #matrix
+mode(movie_matrix) #character
+
+#convert a vector to a matrix
+avg_rate <- c(8.3, 8.1, 7.9, 8)
+avg_cost <- c(30, 10.4, 1, 15)
+sb_matrix <- c(avg_rate, avg_cost) #has all listed consecutively
+attr(sb_matrix, "dim") <- c(4, 2) # add dimension attribute to make matrix
+
 ####
 #Lists
 ####
@@ -62,6 +72,10 @@ movie
 #statistics
 class(movie$name) #return type if exists
 class(movie$foreign) #return NULL if doesn't exists
+class(movie) #list
+mode(movie) #list
+mode(movie[[1]]) #character (e.g. name "Toy Story")
+mode(movie[[2]]) #numeric (e.g. year 1995)
 
 ####
 #Dataframes
