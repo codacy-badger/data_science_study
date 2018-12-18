@@ -6,6 +6,7 @@
 ratings <- c(81, 125) #assign vector to variable
 ratings <- c(ratings, 42, 96) #append
 c(1:10) #sequential list
+as.integer(c(1, 2, 3)) #integer vector as numeric is default
 
 #factors and ordered factors
 factor(c("a", "a", "b", "c", "d", "b", "d"))
