@@ -20,7 +20,7 @@ dim(movie_array) #returns number of rows and then columns
 movie_length_arr <- array(c(125, 81, 118, 81, 106, 121, 95, 100, 104),
                       dim = c(3, 3))
 names(movie_length_arr) <- movie_vector #assign names to length
-movie_length_arr + 5 #add 5 without changing values
+movie_length_arr + 5 # add 5 without changing values
 
 #conditionals
 movie_length_arr > 120 #show table of T/F
@@ -99,6 +99,9 @@ tail(movies)
 # add column
 movies["length"] <- c(81, 125, 97, 100, 87, 139, 130, 119)
 
+#get only some columns
+movies[1, c("name", "length")]
+
 # add row
 movies <- rbind(movies, c(name = "Dr Strangelove", year = 1964, length = 94))
 
@@ -109,3 +112,11 @@ movies <- movies[-9, ]
 movies["length"] <- NULL
 
 movies
+
+####
+#Built in datasets
+####
+
+data() #may have to use in the CLI, might not work in an IDE
+help(CO2) #same as above
+CO2 #list all data in dataset

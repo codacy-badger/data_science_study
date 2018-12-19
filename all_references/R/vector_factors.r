@@ -22,6 +22,7 @@ ratings["Sam"] #recall vector value
 summary(c("a", "a", "b", "c", "d", "b", "d")) #char vector=lenth class and mode
 summary(factor(c("a", "a", "b", "c", "d", "b", "d"))) #factor=list count of each
 length(c("a", "a", "b", "c", "d", "b", "d"))
+nchar(ratings) #2 3 2 2
 sort(c("a", "a", "b", "c", "d", "b", "d"))
 sort(ratings)
 sort(ratings, decreasing = TRUE)
