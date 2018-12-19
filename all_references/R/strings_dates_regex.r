@@ -4,7 +4,7 @@
 
 library(stringr) #needed for str_sub
 
-lines <- readLines("movie-text.txt")
+lines <- readLines("testfiles/movie-text.txt")
 
 #character manipulation
 toupper(lines[1]) #uppercase

@@ -1,3 +1,6 @@
+#Show all data structures loaded
+ls()
+
 ####
 #Arrays
 ####

@@ -1,5 +1,5 @@
 # read a csv file - use getwd() to find out what root working directory is
-movies_data <- read.csv("movies-db.csv", header = TRUE, sep = ",")
+movies_data <- read.csv("testfiles/movies-db.csv", header = TRUE, sep = ",")
 
 movie_year <- 2002
 
