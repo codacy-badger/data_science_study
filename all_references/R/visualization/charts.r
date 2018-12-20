@@ -1,5 +1,8 @@
-# install.packages("ggplot2") run on CLI
+if ("ggplot2" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("ggplot2")
+}
 library(ggplot2)
+#can be assigned to variables and displayed later with #print
 
 ####
 #Barcharts
@@ -43,7 +46,23 @@ ggplot(mtcars, aes(x = 1, y = sort(mtcars$carb), fill = sort(mtcars$carb))) +
   geom_bar(stat = "identity") +
   #shift into circle, theta keeps axis from warping
   coord_polar(theta = "y") +
-  labs(y = "Carburetors") +
+  labs(y = "", fill = "Carburetors") +
+  ggtitle("Pie Chart") +
+  theme(
+    axis.line = element_blank(),
+    axis.text.x = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title.y = element_blank(),
+    panel.background = element_blank())
+
+ggplot(mtcars, aes(x = 1, y = factor(mtcars$cyl), fill = factor(mtcars$cyl))) +
+  #geom_bars helps to stack bars
+  geom_bar(stat = "identity") +
+  #shift into circle, theta keeps axis from warping
+  coord_polar(theta = "y") +
+  labs(y = "", fill = "Carburetors") +
+  ggtitle("Pie Chart") +
   theme(
     axis.line = element_blank(),
     axis.text.x = element_blank(),
