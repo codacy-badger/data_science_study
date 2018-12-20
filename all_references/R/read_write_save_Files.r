@@ -6,7 +6,9 @@
 mycsv <- read.csv("testfiles/movies-db.csv")
 
 #EXCEL
-# install[dot]packages("readxl") run on CLI
+if ("readxl" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("readxl")
+}
 library(readxl) #load library
 myxls <- read_excel("testfiles/movies-db.xls") #read file
 
@@ -44,7 +46,9 @@ write.table(mycsv, file = "output/datafile_as_csv.csv", row.names = FALSE,
   col.names = FALSE, sep = ",")
 
 #write to excel
-# install[dot]packages("xlsx") run on CLI
+if ("xlsx" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("xlsx")
+}
 library(xlsx)
 write.xlsx(mycsv, file = "output/datafile_as_xlsx.xlsx", sheetName = "Sheet1",
   col.names = TRUE, row.names = FALSE)
