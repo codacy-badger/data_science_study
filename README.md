@@ -10,15 +10,30 @@ This repository stores the code I made while learning various things during the 
 
 ## Courses Completed
 
+### Cognitive Class - Applied Data Science with R
+
 :ballot_box_with_check: Cognitive Class - [R101](https://courses.cognitiveclass.ai/certificates/188a87f3ec2b4380944c2c38d3882631)  
+
+### DataCamp
+
 :ballot_box_with_check: DataCamp - [Free Introduction to R](https://campus.datacamp.com/courses/free-introduction-to-r)
 
 ## Courses Planned
 
+### Cognitive Class - Applied Data Science with R
+* [Using R with Databases](https://cognitiveclass.ai/courses/using-r-with-databases/)
+* [Data Visualization with R](https://cognitiveclass.ai/courses/data-visualization-with-r/)
+
+### Cognitive Class - Applied Data Science with Python
+* [Python for Data Science](https://cognitiveclass.ai/courses/python-for-data-science/)
+* [Data Analysis with Python](https://cognitiveclass.ai/courses/data-analysis-python/)
+* [Data Visualization with Python](https://cognitiveclass.ai/courses/data-visualization-with-python/)
 
 ## Change Log
 
-* 2018-12-19 No longer using Cognitive Class due to too many bugs taking up time.
+* **2018-12-19** Pausing using Cognitive Class due to too many bugs taking up time in R with Databases course
+* **2018-12-19** Try DataCamp course
+* **2018-12-20** Skip *Using R with Databases* and either continue after labs are fixed or attempt to pass exams without utilizing Labs.
 
 ## License
 
