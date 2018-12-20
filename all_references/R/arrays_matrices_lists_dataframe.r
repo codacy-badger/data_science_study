@@ -37,6 +37,10 @@ array(movie_vector, dim = c(3, 3))[movie_length_arr > 120] #use cond for subset
 movie_matrix <- matrix(movie_vector, nrow = 3, ncol = 3) #assign to col first
 movie_matrix <- matrix(movie_vector, nrow = 3, ncol = 3, byrow = TRUE)
 
+#names
+rownames(movie_matrix) <- c("Name1", "Name2", "Name3")
+colnames(movie_matrix) <- c("Name4", "Name5", "Name6")
+
 #get values
 movie_matrix[1, 2] #row 1 column 2
 movie_matrix[2:3, 1:2] #row 2 thru 3 column 1 through 2
@@ -45,11 +49,19 @@ movie_matrix[2:3, 1:2] #row 2 thru 3 column 1 through 2
 class(movie_matrix) #matrix
 mode(movie_matrix) #character
 
+boxoffice <- matrix(c(460.998, 314.4, 290.475, 247.900), nrow = 2, byrow = TRUE)
+rowSums(boxoffice)
+colSums(boxoffice)
+
 #convert a vector to a matrix
-avg_rate <- c(8.3, 8.1, 7.9, 8)
-avg_cost <- c(30, 10.4, 1, 15)
+avg_rate <- c(8.3, 8.1, 7.9)
+avg_cost <- c(30, 10.4, 1)
 sb_matrix <- c(avg_rate, avg_cost) #has all listed consecutively
-attr(sb_matrix, "dim") <- c(4, 2) # add dimension attribute to make matrix
+attr(sb_matrix, "dim") <- c(3, 2) # add dimension attribute to make matrix
+
+# add a vector to a matrix
+movie_matrix <- cbind(movie_matrix, avg_rate) #as a column
+movie_matrix <- rbind(movie_matrix, c("1", "2", "3", 4.2))
 
 ####
 #Lists
