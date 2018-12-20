@@ -6,17 +6,15 @@
 
 ## Purpose
 
-This repository stores the code I made while learning various things during the winter of 2018-19.
+This repository stores the code I made while learning various things during the winter of 2018/19.
 
 ## Courses Completed
 
-### Cognitive Class - Applied Data Science with R
-
-:ballot_box_with_check: [R101](https://courses.cognitiveclass.ai/certificates/188a87f3ec2b4380944c2c38d3882631)
+:ballot_box_with_check: Cognitive Class - [R101](https://courses.cognitiveclass.ai/certificates/188a87f3ec2b4380944c2c38d3882631)  
+:ballot_box_with_check: DataCamp - [Free Introduction to R](https://campus.datacamp.com/courses/free-introduction-to-r)
 
 ## Courses Planned
 
-* DataCamp - (Free Introduction to R)[https://campus.datacamp.com/courses/free-introduction-to-r]
 
 ## Change Log
 
