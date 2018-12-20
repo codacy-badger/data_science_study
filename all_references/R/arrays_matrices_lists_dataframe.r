@@ -73,10 +73,14 @@ movie <- list(name = "Toy Story", year = 1995,
               genre = c("Animation", "Adventure", "Comedy"))
 
 #get values
-movie[2] #display second value
+movie[2] #display second value as type list
+movie["year"]   #same as above
+movie[[2]] #component : display second value as whatever type the value is
+movie[["year"]] #same as above
+movie$year      #same as above
 movie[2:3] #display 2nd through 3rd
-movie$name #prints name
-movie["name"] #prints name
+movie[[3]][1] #gets the first item inside the third component
+movie$genre[1]  #same as above
 
 #appending and updating and removing from lists
 movie["age"] <- 5 #adds age and sets it to 5
