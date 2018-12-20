@@ -110,6 +110,13 @@ movies[1, 2] #row one col 2
 str(movies) #structure of the dataframe
 head(movies)
 tail(movies)
+order(movies$year) #first # returned is the orig pos that belongs in 1, etc.
+movies$year[order(movies$year)] #to use order to sort single column
+movies[order(movies$year), ] #to use order to sort entire frame
+
+#get values is same as in lists
+movies[(movies$year > 2000), ]
+subset(movies, subset = year > 2000)
 
 # add column
 movies["length"] <- c(81, 125, 97, 100, 87, 139, 130, 119)
