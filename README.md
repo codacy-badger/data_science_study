@@ -38,3 +38,9 @@ This repository stores the code I made while learning various things during the 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## My Coding Statistics
+
+![Coding Activity](https://wakatime.com/share/@dd391fcb-e113-47bf-8178-978cbb64803f/f4a82301-ba0b-43d6-b403-cc77f4c2e2c5.png)  
+![Languages](https://wakatime.com/share/@dd391fcb-e113-47bf-8178-978cbb64803f/71da71aa-3296-492e-840c-3725e1f63990.png)  
+![Editors](https://wakatime.com/share/@dd391fcb-e113-47bf-8178-978cbb64803f/131dbc27-02b4-4fa0-977c-4731efe5b0fa.png)
