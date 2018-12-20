@@ -1,17 +1,31 @@
 ####
-#Vectors and Factors
+#Vectors
 ####
 
-#combine function to make a vector (1-D Array)
+#combine function c() to make a vector (1-D Array)
 ratings <- c(81, 125) #assign vector to variable
 ratings <- c(ratings, 42, 96) #append
 c(1:10) #sequential list
 as.integer(c(1, 2, 3)) #integer vector as numeric is default
 
-#factors and ordered factors
-factor(c("a", "a", "b", "c", "d", "b", "d"))
+####
+#Factors
+####
+
+#turn a vector into a factor with and without explicit ordering.
+factor(c("a", "a", "b", "c", "d", "b", "d")) #no specific ordering >nominal
 factor(c("a", "a", "b", "c", "d", "b", "d"), ordered = TRUE,
-       levels = c("c", "d", "a", "b"))
+       levels = c("c", "d", "a", "b")) #specific ordering >ordinal
+
+#change names of levels
+mf_factor <- factor(c("M", "F", "F", "M", "M"))
+levels(mf_factor) <- c("Female", "Male") #ensure same ordering
+
+#unordered factors return NA on comparison
+
+####
+#Vectors and Factors
+####
 
 #names
 ratings <- c(81, 125, 42, 96)
