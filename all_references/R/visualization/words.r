@@ -39,3 +39,12 @@ wordcloud(words = dtm_df$word, freq = dtm_df$freq,
 wordcloud(words = dtm_df$word, freq = dtm_df$freq,
   min.freq = 1, max.words = 250, colors = brewer.pal(8, "Dark2"),
   random.order = FALSE)
+
+#freq : The frequencies of the words.
+#min.freq : The words with frequencies below this number will not be plotted.
+#max.words : The maximum number of words to be plotted in the image.
+#random.order : If true, plots word in a random order.
+#random.order : If false, they will be plotted in decreasing frequency.
+#rot.per : The proportion of words with 90 degree rotation (vertical text)
+#colors : The color keywords (or values) from least to most frequent.
+#    To exemplify, colors=“black” will plot the cloud using only a single color.
