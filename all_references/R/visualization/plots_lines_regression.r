@@ -1,12 +1,13 @@
-if ("ggplot2" %in% rownames(installed.packages()) == FALSE) {
-  install.packages("ggplot2")
-}
-library(ggplot2)
 #can be assigned to variables and displayed later with #print
 
 ####
 #Scatter Plot
 ####
+
+if ("ggplot2" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("ggplot2")
+}
+library(ggplot2)
 
 qplot (
   mpg,
@@ -30,6 +31,12 @@ ggplot(mtcars, aes(x = mpg, y = wt, color = factor(mtcars$cyl),
 ####
 #Line Plot
 ####
+
+if ("ggplot2" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("ggplot2")
+}
+library(ggplot2)
+
 eustock_df <- as.data.frame(EuStockMarkets)
 
 ggplot(eustock_df, aes(x = c(1:nrow(eustock_df)), y = DAX)) +
@@ -52,6 +59,11 @@ ggplot() +
 #Linear Regression
 ####
 
+if ("ggplot2" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("ggplot2")
+}
+library(ggplot2)
+
 ggplot(mtcars, aes(x = mpg, y = wt)) +
   geom_point(shape = 19, color = "blue") +
   geom_smooth(method = "lm", se = FALSE, color = "red") + #method: linear method
@@ -68,3 +80,16 @@ ggplot(mtcars, aes(x = mpg, y = wt, color = factor(mtcars$cyl))) +
   geom_smooth(method = "auto", se = TRUE, color = "red") + #method: gaussian
   labs(x = "Miles per Gallon", y = "Weight") +
   ggtitle("Gaussian Regression with confidence intervals")
+
+####
+#Box Plot
+####
+
+if ("ggplot2" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("ggplot2")
+}
+library(ggplot2)
+
+qplot(factor(cyl), mpg, data = mtcars, geom = "boxplot")
+
+ggplot(mtcars, aes(factor(cyl), mpg)) + geom_boxplot()
