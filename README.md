@@ -13,6 +13,7 @@ This repository stores the code I made while learning various things during the 
 ### Cognitive Class - Applied Data Science with R
 
 :ballot_box_with_check: Cognitive Class - [R101](https://courses.cognitiveclass.ai/certificates/188a87f3ec2b4380944c2c38d3882631)  
+:ballot_box_with_check: Cognitive Class - [Data Visualization with R](https://courses.cognitiveclass.ai/certificates/7dc9fafe65a84d8fa815f91b10a3a893)
 
 ### DataCamp
 
@@ -22,7 +23,6 @@ This repository stores the code I made while learning various things during the 
 
 ### Cognitive Class - Applied Data Science with R
 * [Using R with Databases](https://cognitiveclass.ai/courses/using-r-with-databases/)
-* [Data Visualization with R](https://cognitiveclass.ai/courses/data-visualization-with-r/)
 
 ### Cognitive Class - Applied Data Science with Python
 * [Python for Data Science](https://cognitiveclass.ai/courses/python-for-data-science/)
