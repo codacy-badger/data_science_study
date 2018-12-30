@@ -10,7 +10,8 @@ library(htmlwidgets)
 #empty world map
 map <- leaflet()
 
-#publish a tile layer on the map
+#publish a tile layer on the map - To zoom in the map to see different
+#                                  countries and streets in detail.
 map <- addTiles(map)
 
 #%>% - result of left is is passed as first param of func on right

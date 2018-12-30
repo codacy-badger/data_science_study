@@ -67,3 +67,12 @@ saveRDS(movie_df, file = "output/df_as_rda.Rda")
 
 #Saving all data structures in current R workspace
 save.image("output/all_data_structures.Rds")
+
+####
+#Downloading
+####
+
+download.file("https://ibm.box.com/shared/static/9sfgqavy3bvr9epihw87p7x7vcpfywjn.txt",
+              destfile = "/resources/data/countries.txt", quiet = TRUE)
+download.file("https://ibm.box.com/shared/static/9u5rrzdlzalsbjewkmqqho4ohoe13g82.csv",
+              destfile = "/resources/data/energy.csv", quiet = TRUE)
