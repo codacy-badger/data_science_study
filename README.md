@@ -21,19 +21,18 @@ This repository stores the code I made while learning various things during the 
 
 ## Courses Planned
 
-### Cognitive Class - Applied Data Science with R
-* [Using R with Databases](https://cognitiveclass.ai/courses/using-r-with-databases/)
+### DataCamp
+* [TRACK: Data Scientist with Python](https://www.datacamp.com/tracks/data-scientist-with-python) [In Progress]
+* [TRACK: Data Manipulation with Python](https://www.datacamp.com/tracks/data-manipulation-with-python) [One extra course - 4 hrs]
+* [TRACK: Data Scientist with R](https://www.datacamp.com/tracks/data-scientist-with-r) [94 Hours]
 
-### Cognitive Class - Applied Data Science with Python
-* [Python for Data Science](https://cognitiveclass.ai/courses/python-for-data-science/)
-* [Data Analysis with Python](https://cognitiveclass.ai/courses/data-analysis-python/)
-* [Data Visualization with Python](https://cognitiveclass.ai/courses/data-visualization-with-python/)
 
 ## Change Log
 
 * **2018-12-19** Pausing using Cognitive Class due to too many bugs taking up time in R with Databases course
 * **2018-12-19** Try DataCamp course
 * **2018-12-20** Skip *Using R with Databases* and either continue after labs are fixed or attempt to pass exams without utilizing Labs.
+* **2019-04-06** After being frustrated by Cognitive Class's bugs and the cost of DataCamp, I was able to find a free DataCamp 2 month trial.  I will focus on DataCamp courses until March 7th, 2019.
 
 ## License
 
