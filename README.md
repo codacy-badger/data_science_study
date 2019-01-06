@@ -17,7 +17,8 @@ This repository stores the code I made while learning various things during the 
 
 ### DataCamp
 
-:ballot_box_with_check: DataCamp - [Free Introduction to R](https://campus.datacamp.com/courses/free-introduction-to-r)
+:ballot_box_with_check: DataCamp - [Free Introduction to R](https://campus.datacamp.com/courses/free-introduction-to-r)  
+:ballot_box_with_check: DataCamp - [Introduction to Python](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 
 ## Courses Planned
 
@@ -32,7 +33,7 @@ This repository stores the code I made while learning various things during the 
 * **2018-12-19** Pausing using Cognitive Class due to too many bugs taking up time in R with Databases course
 * **2018-12-19** Try DataCamp course
 * **2018-12-20** Skip *Using R with Databases* and either continue after labs are fixed or attempt to pass exams without utilizing Labs.
-* **2019-04-06** After being frustrated by Cognitive Class's bugs and the cost of DataCamp, I was able to find a free DataCamp 2 month trial.  I will focus on DataCamp courses until March 7th, 2019.
+* **2019-01-06** After being frustrated by Cognitive Class's bugs and the cost of DataCamp, I was able to find a free DataCamp 2 month trial.  I will focus on DataCamp courses until March 7th, 2019.
 
 ## License
 
