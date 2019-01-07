@@ -53,3 +53,14 @@ for val in meas:  # iterates twice
     print(val)
 for val in np.nditer(meas):  # iterates 10 times
     print(val)
+
+# random
+print(np.random.rand())
+print(np.random.randint(0, 2))  # 0 or 1
+
+np.random.seed(123)
+print(np.random.rand())
+print(np.random.rand())
+np.random.seed(123)
+print(np.random.rand())
+print(np.random.rand())

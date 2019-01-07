@@ -51,3 +51,6 @@ for index, height in enumerate(list):
 
 for letter in "family":
     print(letter.capitalize())
+
+for x in range(10):  # 0 through 9 for 10 iterations
+    print(x)
