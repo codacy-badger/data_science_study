@@ -43,3 +43,13 @@ np.mean(np_height)
 np.median(np_height)
 np.corrcoef(np_height, np_weight)
 np.std(np_height)
+
+# iteration
+for val in bmi:  # 1d numpy array
+    print(val)
+
+meas = np.array([np_height, np_weight])  # 2d numpy array
+for val in meas:  # iterates twice
+    print(val)
+for val in np.nditer(meas):  # iterates 10 times
+    print(val)

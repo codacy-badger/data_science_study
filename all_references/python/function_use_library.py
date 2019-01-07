@@ -33,3 +33,21 @@ elif z % 3 == 0:  # never reached if also even
     print("z is divisible by 3")
 else:
     print("z is odd")
+
+# while loops
+y = 50
+print(str(y))
+while y > 1:
+    y = y / 4
+    print(str(y))
+
+# for loops - iteration
+list = [1.73, 1.68, 1.71, 1.89]
+for height in list:
+    print(height)
+
+for index, height in enumerate(list):
+    print("index " + str(index) + ": " + str(height))
+
+for letter in "family":
+    print(letter.capitalize())

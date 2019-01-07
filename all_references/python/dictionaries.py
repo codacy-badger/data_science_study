@@ -15,5 +15,8 @@ print(dict["key1"])  # value1
 dict["key7"] = "value7"
 
 # Remove item
-
 del(dict["key4"])
+
+# iteration - order is arbitrary
+for key, value in dict.items():
+    print(key + " -- " + value)

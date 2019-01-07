@@ -46,6 +46,19 @@ brics.iloc[:, [0, 1]]  # first two columns
 brics[brics["area"] > 8]
 brics[np.logical_and(brics["area"] > 8, brics["area"] < 10)]
 
+# iteration
+#   rows
+for lab, row in brics.iterrows():
+    print(lab)  # label
+    print(row)  # row as panda series
+for lab, row in brics.iterrows():
+    print(lab + ": " + row["capital"])
+for lab, row in brics.iterrows():  # bad(@ big) - creates series on every iter
+    brics.loc[lab, "name_length"] = len(row["country"])
+brics["name_length"] = brics["country"].apply(len)  # better
+# get the country column, apply the length function with country name as
+#    input and store into name_length
+
 #          country    capital    area  population
 # BR        Brazil   Brasilia   8.516      200.40
 # RU        Russia     Moscow  17.100      143.50
