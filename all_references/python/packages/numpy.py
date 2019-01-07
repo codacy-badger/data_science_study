@@ -25,6 +25,9 @@ bmi = np_weight / (np_height ** 2)
 bmi[1]
 bmi > 23
 bmi[bmi > 23]
+np.logical_and(bmi > 21, bmi < 24)
+np.logical_or(bmi < 21, bmi > 24)
+np.logical_not(bmi > 21)
 
 # 2D arrays
 np_2d = np.array([height, weight])

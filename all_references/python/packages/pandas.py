@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 # high level data manipulation tool
 
 # dictionary method
@@ -37,3 +38,17 @@ brics.iloc[[1]]
 brics.iloc[[1, 2, 3]]  # all columns
 brics.iloc[[1, 2, 3], [0, 1]]  # first two columns
 brics.iloc[:, [0, 1]]  # first two columns
+
+# comparison - need panda series
+#   step 1 - get column as **series** - brics["area"]
+#   step 2 - compare              - brics["area"] > 8
+#   step 3 - get result columns
+brics[brics["area"] > 8]
+brics[np.logical_and(brics["area"] > 8, brics["area"] < 10)]
+
+#          country    capital    area  population
+# BR        Brazil   Brasilia   8.516      200.40
+# RU        Russia     Moscow  17.100      143.50
+# IN         India  New Delhi   3.286     1252.00
+# CH         China    Beijing   9.567     1357.00
+# SA  South Africa   Pretoria   1.221       52.98
