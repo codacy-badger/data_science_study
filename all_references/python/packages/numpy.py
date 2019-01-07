@@ -25,6 +25,9 @@ bmi = np_weight / (np_height ** 2)
 bmi[1]
 bmi > 23
 bmi[bmi > 23]
+np.logical_and(bmi > 21, bmi < 24)
+np.logical_or(bmi < 21, bmi > 24)
+np.logical_not(bmi > 21)
 
 # 2D arrays
 np_2d = np.array([height, weight])
@@ -40,3 +43,24 @@ np.mean(np_height)
 np.median(np_height)
 np.corrcoef(np_height, np_weight)
 np.std(np_height)
+
+# iteration
+for val in bmi:  # 1d numpy array
+    print(val)
+
+meas = np.array([np_height, np_weight])  # 2d numpy array
+for val in meas:  # iterates twice
+    print(val)
+for val in np.nditer(meas):  # iterates 10 times
+    print(val)
+
+# random
+print(np.random.rand())
+print(np.random.randint(0, 2))  # 0 or 1
+
+np.random.seed(123)
+print(np.random.rand())
+print(np.random.rand())
+np.random.seed(123)
+print(np.random.rand())
+print(np.random.rand())
