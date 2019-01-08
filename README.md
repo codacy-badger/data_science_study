@@ -19,7 +19,11 @@ This repository stores the code I made while learning various things during the 
 ### DataCamp
 
 :ballot_box_with_check: DataCamp - [Free Introduction to R](https://campus.datacamp.com/courses/free-introduction-to-r)  
-:ballot_box_with_check: DataCamp - [Introduction to Python](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+:ballot_box_with_check: DataCamp - [Introduction to Python](https://www.datacamp.com/courses/intro-to-python-for-data-science)  
+:ballot_box_with_check: DataCamp - [Intermediate Python for Data Science
+](https://campus.datacamp.com/courses/intermediate-python-for-data-science)  
+:ballot_box_with_check: DataCamp - [Python Data Science Toolbox (Part 1)
+](https://campus.datacamp.com/courses/python-data-science-toolbox-part-1)  
 
 ## Courses Planned
 

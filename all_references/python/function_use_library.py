@@ -1,3 +1,5 @@
+import builtins
+from functools import reduce
 ####
 # Misc
 ####
@@ -17,6 +19,13 @@ type(bmi)
 round(1.68, 1)  # 1.7
 round(1.68, 1)  # 2
 help(round)
+
+# tuples
+even_nums = (2, 4, 6)
+print(type(even_nums))
+print(even_nums)
+x, y, z = even_nums
+x = even_nums[0]
 
 # comparison - Not has higher prio than and/or
 x = 13
@@ -42,11 +51,11 @@ while y > 1:
     print(str(y))
 
 # for loops - iteration
-list = [1.73, 1.68, 1.71, 1.89]
-for height in list:
+height_list = [1.73, 1.68, 1.71, 1.89]
+for height in height_list:
     print(height)
 
-for index, height in enumerate(list):
+for index, height in enumerate(height_list):
     print("index " + str(index) + ": " + str(height))
 
 for letter in "family":
@@ -54,3 +63,20 @@ for letter in "family":
 
 for x in range(10):  # 0 through 9 for 10 iterations
     print(x)
+
+# map
+result = map(lambda height: height ** 2, height_list)
+print(list(result))
+
+# filter
+result = filter(lambda height: height > 1.72, height_list)
+print(list(result))
+
+# reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) calculates ((((1+2)+3)+4)+5)
+# from functools import reduce
+result = reduce(lambda height_prod, height: height_prod * height, height_list)
+print(result)
+
+# builtins
+# import builtins
+dir(builtins)

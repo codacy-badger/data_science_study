@@ -1,3 +1,8 @@
+import numpy
+import numpy as np
+from numpy import array
+from numpy import array as ar
+
 # numpy = work eff with arrays
 # matplotlib = data visualization
 # scikit = machine learning
@@ -17,15 +22,15 @@ print(sys.version)
 ####
 
 # pip3 install numpy
-import numpy
+# import numpy
 numpy.array([1, 2, 3])
 
 # OR
-import numpy as np
+# import numpy as np
 np.array([1, 2, 3])
 
 # OR
-from numpy import array  # unpreferred as later calls are unclear what package
+# from numpy import array  # unpreferred/later calls are unclear what package
 array([1, 2, 3])
-from numpy import array as ar
+# from numpy import array as ar
 ar([1, 2, 3])
