@@ -1,3 +1,4 @@
+import builtins
 ####
 # Misc
 ####
@@ -17,6 +18,13 @@ type(bmi)
 round(1.68, 1)  # 1.7
 round(1.68, 1)  # 2
 help(round)
+
+# tuples
+even_nums = (2, 4, 6)
+print(type(even_nums))
+print(even_nums)
+x, y, z = even_nums
+x = even_nums[0]
 
 # comparison - Not has higher prio than and/or
 x = 13
@@ -54,3 +62,7 @@ for letter in "family":
 
 for x in range(10):  # 0 through 9 for 10 iterations
     print(x)
+
+# builtins
+# import builtins
+dir(builtins)
