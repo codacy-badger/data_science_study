@@ -1,3 +1,4 @@
+import pandas as pd
 ####
 # basic function
 ####
@@ -186,3 +187,30 @@ def count_entries_variable_raise(df, *col_names):  # based on DataCamp code
             else:  # if not found, add entry and set key to 1
                 item_count[entry] = 1
     return item_count
+
+
+####
+# count entries in general dataframe of an aritrary list of  general columns
+# based on DataCamp code
+####
+# import pandas as pd
+
+
+def count_entries_variable_cvs(csv_file, c_size, *col_names):
+    """Return dictionary with each unique item in the column and number of
+    appearences of each value as key value pairs respectively."""
+    item_count = {}  # dict to store counts
+    for chunk in pd.read_csv(csv_file, chunksize=c_size):
+        for col_name in col_names:
+            if col_name not in chunk.columns:
+                raise ValueError('The DataFrame does not have a '
+                                 + col_name + ' column.')
+            for entry in chunk[col_name]:
+                if entry in item_count.keys():  # if found, add one to key
+                    item_count[entry] = item_count[entry] + 1
+                else:  # if not found, add entry and set key to 1
+                    item_count[entry] = 1
+    return item_count
+
+
+count_entries_variable_cvs("testfiles/movies-db.csv", 12, "genre")

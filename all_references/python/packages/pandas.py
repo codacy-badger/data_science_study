@@ -12,10 +12,30 @@ brics = pd.DataFrame(dict)
 brics.index = ["BR", "RU", "IN", "CH", "SA"]
 
 print(brics)
+brics.head(2)  # default is 5
 
 # import csv method
 movies = pd.read_csv("testfiles/movies-db.csv")
 movies = pd.read_csv("testfiles/movies-db.csv", index_col=0)
+
+# by chunk
+result = []
+for chunk in pd.read_csv("testfiles/movies-db.csv", chunksize=12):
+    result.append(sum(chunk["length_min"]))
+print(sum(result))
+
+# OR
+df_reader = pd.read_csv("testfiles/movies-db.csv", chunksize=4)
+print(next(df_reader))
+print(next(df_reader))
+
+# OR
+df_reader = pd.read_csv("testfiles/movies-db.csv", chunksize=4)
+data = pd.DataFrame()
+for df_movies in df_reader:
+    df_movies_comedy = df_movies[df_movies["genre"] == "Comedy"]
+    data = data.append(df_movies_comedy)
+print(data)
 
 ####
 # Selecting

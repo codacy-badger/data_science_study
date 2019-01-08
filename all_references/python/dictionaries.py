@@ -20,3 +20,5 @@ del(dict["key4"])
 # iteration - order is arbitrary
 for key, value in dict.items():
     print(key + " -- " + value)
+
+# use dict(zip_object) to turn zip of 2-tuple pairs into dictionary

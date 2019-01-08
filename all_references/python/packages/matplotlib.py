@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 # import numpy as np
 
 year = [1950, 1970, 1990, 2010]
@@ -29,6 +30,11 @@ plt.grid(True)
 plt.xscale('log')
 plt.show()
 plt.clf()
+
+# scatter dataframe
+data_frame = pd.read_csv("testfiles/movies-db.csv")
+data_frame.plot(kind="scatter", x="average_rating", y="length_min")
+plt.show()
 
 # histogram
 help(plt.hist)

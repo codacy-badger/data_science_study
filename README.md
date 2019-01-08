@@ -9,6 +9,12 @@
 
 This repository stores the code I made while learning various things during the winter of 2018/19.
 
+## File layout
+
+* The folder *all_references* stores code snippets of concepts learned.  **Most of the work is stored in this folder**
+* The folder *class_files* stores any short projects generated in a class.  Most classes do not have project files.  There is not a lot of code stored here.  
+* The folder *test_files* stores data files needed for code snippets.  These are primarily `csv` files as study is focused mostly around data science topics.
+
 ## Courses Completed
 
 ### Cognitive Class - Applied Data Science with R
@@ -20,10 +26,9 @@ This repository stores the code I made while learning various things during the 
 
 :ballot_box_with_check: DataCamp - [Free Introduction to R](https://campus.datacamp.com/courses/free-introduction-to-r)  
 :ballot_box_with_check: DataCamp - [Introduction to Python](https://www.datacamp.com/courses/intro-to-python-for-data-science)  
-:ballot_box_with_check: DataCamp - [Intermediate Python for Data Science
-](https://campus.datacamp.com/courses/intermediate-python-for-data-science)  
-:ballot_box_with_check: DataCamp - [Python Data Science Toolbox (Part 1)
-](https://campus.datacamp.com/courses/python-data-science-toolbox-part-1)  
+:ballot_box_with_check: DataCamp - [Intermediate Python for Data Science](https://campus.datacamp.com/courses/intermediate-python-for-data-science)  
+:ballot_box_with_check: DataCamp - [Python Data Science Toolbox (Part 1)](https://campus.datacamp.com/courses/python-data-science-toolbox-part-1)  
+:ballot_box_with_check: DataCamp - [Python Data Science Toolbox (Part 2)](https://www.datacamp.com/courses/python-data-science-toolbox-part-2)  
 
 ## Courses Planned
 
