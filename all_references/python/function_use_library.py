@@ -58,11 +58,35 @@ for height in height_list:
 for index, height in enumerate(height_list):
     print("index " + str(index) + ": " + str(height))
 
+for index, height in enumerate(height_list, start=1):
+    print("index " + str(index) + ": " + str(height))
+
 for letter in "family":
     print(letter.capitalize())
 
 for x in range(10):  # 0 through 9 for 10 iterations
     print(x)
+
+# iterable - object associated with iter() method
+# iterator - associated next() method
+
+my_iterator = iter("Da")
+print(*my_iterator)  # prints entire iterator using "splat"
+
+my_iterator = iter("Da")
+print(next(my_iterator))  # "D"
+print(next(my_iterator))  # "a"
+print(next(my_iterator))  # ERROR: StopIteration
+
+print(sum(iter(height_list)))
+
+height_names = ["sam", "sally", "mom", "dad"]
+family_type_zip = zip(height_names, height_list)  # iterable
+family_type_list = list(family_type_zip)
+
+print(*family_type_zip)
+
+unzip_name, unzip_height = zip(*family_type_zip)
 
 # map
 result = map(lambda height: height ** 2, height_list)

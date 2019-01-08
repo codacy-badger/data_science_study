@@ -17,6 +17,11 @@ print(brics)
 movies = pd.read_csv("testfiles/movies-db.csv")
 movies = pd.read_csv("testfiles/movies-db.csv", index_col=0)
 
+result = []
+for chunk in pd.read_csv("test_files/movies-db.csv", chunksize=12):
+    result.append(sum(chunk["length_min"]))
+print(sum(result))
+
 ####
 # Selecting
 ####
