@@ -4,6 +4,18 @@ from functools import reduce
 # Misc
 ####
 
+# printing quirks
+print("C:\the\name")  # error!
+print("C:\\the\\name")  # escape the \
+print(r"C:\the\name")  # or set as raw with r before the string
+
+print("""Multi
+Line""")  # includes line return
+print("""Multi\
+Line""")  # the \ means the line return is ignored
+
+print("weird" " concat")  # literals only - not variables
+
 # Exponentation (2^4)
 print(2 ** 4)
 
